@@ -13,6 +13,7 @@
 		46DF293B2115E58C00F32F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DF293A2115E58C00F32F04 /* Assets.xcassets */; };
 		46DF293E2115E58C00F32F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DF293C2115E58C00F32F04 /* LaunchScreen.storyboard */; };
 		46DF294A2116088000F32F04 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DF29492116088000F32F04 /* DroppablePin.swift */; };
+		46DF294C211622B100F32F04 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DF294B211622B100F32F04 /* PhotoCell.swift */; };
 		C8FA56D0F38F9C48A0849EED /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F2CF1F581D09D23D88A4E5 /* Pods_pixel_city.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		46DF293D2115E58C00F32F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46DF293F2115E58C00F32F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DF29492116088000F32F04 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		46DF294B211622B100F32F04 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		C0C8927AABAF13C53846E6BD /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 		D6F2CF1F581D09D23D88A4E5 /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				46DF29492116088000F32F04 /* DroppablePin.swift */,
+				46DF294B211622B100F32F04 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DF294C211622B100F32F04 /* PhotoCell.swift in Sources */,
 				46DF29362115E58C00F32F04 /* MapVC.swift in Sources */,
 				46DF294A2116088000F32F04 /* DroppablePin.swift in Sources */,
 				46DF29342115E58C00F32F04 /* AppDelegate.swift in Sources */,
