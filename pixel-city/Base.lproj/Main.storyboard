@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t62-zJ-fzO">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t62-zJ-fzO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-HP-nlp">
@@ -58,13 +58,17 @@
                                     <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFj-Mj-xxf"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-Dx-cp7">
-                                <rect key="frame" x="0.0" y="662" width="375" height="0.0"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-Dx-cp7">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="CfB-4Q-RjI"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iVh-Dx-cp7" firstAttribute="top" secondItem="kJD-bA-PhN" secondAttribute="bottom" constant="20" id="7Ut-St-0zg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kJD-bA-PhN" secondAttribute="trailing" constant="16" id="8vW-x2-bdg"/>
                             <constraint firstItem="t62-zJ-fzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Wl-gA-JAt"/>
                             <constraint firstItem="JiS-HP-nlp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CCb-k2-sgr"/>
@@ -72,7 +76,6 @@
                             <constraint firstItem="iVh-Dx-cp7" firstAttribute="top" secondItem="t62-zJ-fzO" secondAttribute="bottom" id="IwT-6J-UNU"/>
                             <constraint firstItem="t62-zJ-fzO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ngz-67-2KX"/>
                             <constraint firstItem="JiS-HP-nlp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nqg-e9-mw4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kJD-bA-PhN" secondAttribute="bottom" constant="20" id="POl-8W-alY"/>
                             <constraint firstItem="t62-zJ-fzO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e0Z-Ab-H3k"/>
                             <constraint firstAttribute="trailing" secondItem="iVh-Dx-cp7" secondAttribute="trailing" id="gxv-dg-9Oh"/>
                             <constraint firstItem="iVh-Dx-cp7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q0D-Fn-qX6"/>
@@ -82,6 +85,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="t62-zJ-fzO" id="Mdu-MY-1Hg"/>
+                        <outlet property="pullUpView" destination="iVh-Dx-cp7" id="pCI-0I-VIE"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="CfB-4Q-RjI" id="SrJ-Xp-ZRP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
